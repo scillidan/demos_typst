@@ -9,10 +9,10 @@ None can hide from Zeus, whether he's calling down a bolt to reveal the surround
 #parbreak
 
 [Attributes]
-#align(horizon, oasis-align(force-frac: 0.35,
+#align(horizon, oasis-align(force-frac: 0.45,
   [#table(stroke: none, inset: 2pt, align: left, columns: 3, column-gutter: .35em,
-    [*HP*], [582], [+2.4],
-    [*MP*], [351], [+1.1])],
+    [*Health*], [582], [+2.4],
+    [*Mana*], [351], [+1.1])],
   [#table(stroke: none, inset: 2pt, align: left, columns: 3, column-gutter: .35em,
     [*Strength*], [21], [+2.1],
     [*Agility*], [11], [+1.2],
@@ -71,15 +71,32 @@ Escape   | 0   | Pusher  | 0 | Initiator | 0
 )
 #v(.1em)
 
-#align(center)[\(Static Field\)]
-#text[Zeus shocks any enemy that he attacks or is hit by his abilities, causing damage equal to a percentage of their current health.],
-
+#align(center)[\(Innate\)]
+*Static Field* \
+#indent[Zeus shocks any enemy that he attacks or is hit by his abilities, causing damage equal to a percentage of their current health.] \
+#align(horizon, oasis-align(force-frac: 0.47,
+  [*Damage*: 3.45],
+  [*Ability*: Passive \
+  *Damage Type*: Magical \
+  *Pierces Spell Immunity*: No]
+))
+#custom-quote([The air crackles with static when the Thundergod walks the world.])
+#parbreak
 [Ability Details] \
-*战斗态势.* \
-#indent[反应 当敌人移入你的威吓范围时 \
-*效果* 你可以对敌人进行一次借机攻击，攻击检定获得+2加值] \
-*坚韧不拔.* 当你的生命值降至0时，你可以进行一次DC15的强韧豁免 \
-_成功:_ 生命值减少到1而非倒地
+*Arc Lightning* \
+#indent[Hurls a bolt of lightning that leaps through nearby enemy units that deal damage.]
+#align(horizon, oasis-align(force-frac: 0.47,
+  [*Damage*: 105/130/155/180 \
+  *Jump Radius*: 450 \
+  *Jumps*: 5/7/9/11],
+  [*Ability*: Unit Target \
+  *Affects*: Enemy Units \
+  *Damage Type*: Magical \
+  *Pierces Spell Immunity*: No]
+))
+*Cooldown*: 1.6 \
+*Mana Cost*: 85/90/95/100
+#custom-quote([Arc Lightning is Zeus' favorite spell to use against puny mortals.])
 #parbreak
 
 [Full History] \

@@ -24,3 +24,9 @@
   h(2em)
   content
 }
+
+#let custom-quote(content) = {
+  pad(x: 1em, y: 0.1em)[
+    #content
+  ]
+}
