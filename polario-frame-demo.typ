@@ -1,16 +1,22 @@
 #import "polario-frame-template.typ": render-polario
 
 #let ext-info = (
-    "background": rgb("#00000000"),
-    "extend-middle-ratio": 80%,
-    "first": text(size: 8pt, fill: white)[This is],
-    "third": text(size: 12pt, fill: white)[This is],
+  "background": rgb("#00000000"),
+  "first": text(size: 8pt, fill: white)[
+    Text on the left \
+    Text on the left
+  ],
+  "third": text(size: 12pt, fill: white)[
+    Text on the right \
+    Text on the right
+  ],
 )
 
 #let params = (
-    "theme": "classic-bottom-three",
-    "img-path": "Eclogues.jpg",
-    "ext-info": ext-info,
+  "theme": "classic-bottom-three",
+  "flipped": true,
+  "img-path": "the-image.jpg",
+  "ext-info": ext-info,
 )
 
 #render-polario(params)
