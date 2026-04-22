@@ -1,7 +1,5 @@
 // https://typst.app/universe/package/oasis-align
 #import "@preview/oasis-align:0.3.3": *
-// https://typst.app/universe/package/libra
-#import "@preview/libra:0.1.0": balance
 // https://typst.app/universe/package/tblr
 #import "@preview/tblr:0.5.0": *
 
