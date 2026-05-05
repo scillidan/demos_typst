@@ -17,6 +17,12 @@
   #el.auto-resume-enum(auto-resuming: true, doc)
 ]
 
+#let divider() = {{
+  v(.1em)
+  line(stroke: 1pt, length: 100%)
+  v(.1em)
+}}
+
 #let receipt-layout(doc) = {
   set page(paper: "a7", height: auto, margin: (x: 4pt, y: 8pt))
   set text(font: "Sarasa Mono SC", size: 8pt)
@@ -31,10 +37,4 @@
   }
   show: init-glossary.with(yaml("receipt-measure.yaml"), term-links: true, format-term: short-long-term)
   doc
-}
-
-#let parbreak = {
-  v(.1em)
-  line(stroke: 1pt, length: 100%)
-  v(.1em)
 }
