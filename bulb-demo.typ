@@ -13,7 +13,7 @@
   (mode: "rgb", method: "cluster6"),
   (mode: "rgb", method: "cluster8"),
 )
-#let img-data = read("有限.jpg", encoding: none)
+#let img-data = read("assets/20231103_21_00_00.jpg", encoding: none)
 
 #block(height: 100%, align(center + horizon,
   grid(

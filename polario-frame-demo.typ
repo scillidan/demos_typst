@@ -15,7 +15,7 @@
 #let params = (
   "theme": "classic-bottom-three",
   "flipped": true,
-  "img-path": "the-image.jpg",
+  "img-path": "assets/Eclogues.jpg",
   "ext-info": ext-info,
 )
 
